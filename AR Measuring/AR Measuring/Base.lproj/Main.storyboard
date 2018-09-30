@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_Measuring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9j4-NY-hVp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="KdI-Yo-jWN">
+                                <rect key="frame" x="103" y="50" width="169" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFw-vy-vsp" userLabel="Distance">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="20.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRq-ag-8ar" userLabel="x">
+                                        <rect key="frame" x="92" y="0.0" width="9" height="20.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-9Z-ewZ" userLabel="y">
+                                        <rect key="frame" x="126" y="0.0" width="9" height="20.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKT-06-aY4" userLabel="z">
+                                        <rect key="frame" x="160" y="0.0" width="9" height="20.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWr-Aj-sam">
+                                <rect key="frame" x="167" y="313.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="UkI-aG-urn"/>
+                                    <constraint firstAttribute="height" constant="40" id="vMc-jG-thk"/>
+                                </constraints>
+                                <state key="normal" image="add"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9j4-NY-hVp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5nm-jJ-yPI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9j4-NY-hVp" secondAttribute="trailing" id="Srh-rN-a9c"/>
+                            <constraint firstItem="9j4-NY-hVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T7m-af-AqT"/>
+                            <constraint firstItem="lWr-Aj-sam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XxL-TS-4a4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9j4-NY-hVp" secondAttribute="bottom" id="ijq-C4-dfd"/>
+                            <constraint firstItem="KdI-Yo-jWN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lI5-OY-Gni"/>
+                            <constraint firstItem="KdI-Yo-jWN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="oeK-ye-UYT"/>
+                            <constraint firstItem="lWr-Aj-sam" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rfk-Tm-P4B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="distance" destination="DFw-vy-vsp" id="bk6-P3-YMf"/>
+                        <outlet property="sceneView" destination="9j4-NY-hVp" id="NWh-xY-x83"/>
+                        <outlet property="xLabel" destination="JRq-ag-8ar" id="R2K-hk-RSo"/>
+                        <outlet property="yLabel" destination="gfX-9Z-ewZ" id="4wL-76-MLm"/>
+                        <outlet property="zLabel" destination="GKT-06-aY4" id="8YW-jZ-nXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="24" height="24"/>
+    </resources>
+</document>
